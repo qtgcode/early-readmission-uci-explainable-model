@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Sensitive/source data: never commit patient-level UCI records or local extracts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+outputs/predictions/*
+outputs/models/*
+*.joblib
+*.pkl
+*.pickle
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,21 @@
+feature,coefficient_log_odds,training_support,odds_ratio
+categorical__diag_2_Pregnancy-related,-0.8588129941359995,265,0.4236646764229455
+categorical__discharge_disposition_id_Discharged/transferred to another rehab fac including rehab units of a hospital .,0.7839203554013829,1191,2.1900411977323078
+categorical__diag_1_Pregnancy-related,0.7499235572843209,437,2.1168381935674874
+categorical__discharge_disposition_id_Discharged/transferred to a long term care hospital.,-0.6822963088288942,236,0.5054549779757158
+categorical__discharge_disposition_id_Discharged/transferred to another type of inpatient care institution,0.5482188304326591,715,1.7301685481367493
+categorical__discharge_disposition_id_Discharged to home,-0.5074980716870288,36247,0.601999856715762
+categorical__discharge_disposition_id_Not Mapped,-0.49872453399346856,598,0.6073047625169788
+categorical__medical_specialty_ObstetricsandGynecology,-0.4074099408642143,409,0.6653713714705041
+categorical__medical_specialty_Surgery-Cardiovascular/Thoracic,-0.3992598219564418,381,0.6708163858831399
+categorical__diag_2_Unknown,0.39409817326581914,210,1.4830461370108257
+categorical__diag_2_External-cause E-codes,0.38708258492160036,422,1.4726781072572734
+categorical__medical_specialty_Nephrology,0.38603243416218885,959,1.4711323849873303
+categorical__diag_2_Neoplasms,0.3536987790257606,1362,1.424326084964997
+categorical__diag_3_Neoplasms,0.34063868196449465,1007,1.405845191861115
+categorical__metformin_Up,-0.3391427357688407,653,0.7123807596165707
+categorical__medical_specialty_Surgery-Vascular,0.32495992391944506,319,1.383975180568518
+categorical__discharge_disposition_id_Discharged/transferred to home with home health service,-0.32235476502118404,7745,0.7244411383602782
+categorical__medical_specialty_Orthopedics-Reconstructive,-0.32209797167093357,705,0.7246271939151492
+numeric__number_inpatient,0.32190743522305804,59602,1.3797570531421626
+categorical__diag_3_Unknown,-0.3207581820461437,845,0.7255986925679822

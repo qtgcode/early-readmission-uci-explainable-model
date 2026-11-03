@@ -1,0 +1,8 @@
+Tỷ lệ ở mỗi lá ước lượng từ train; gắn cờ nếu tỷ lệ nhãn <30 >= threshold chọn trên validation (0.140).
+NẾU số lần nhập viện nội trú năm trước <= 1 VÀ nơi ra viện là “về nhà”: không VÀ nơi ra viện là “chuyển về nhà có dịch vụ chăm sóc tại nhà”: không THÌ tỷ lệ nhãn <30 trong train=0.140; số encounter train ở lá=13,031; GẮN CỜ.
+NẾU số lần nhập viện nội trú năm trước <= 1 VÀ nơi ra viện là “về nhà”: không VÀ nơi ra viện là “chuyển về nhà có dịch vụ chăm sóc tại nhà”: có THÌ tỷ lệ nhãn <30 trong train=0.102; số encounter train ở lá=6,294; không gắn cờ.
+NẾU số lần nhập viện nội trú năm trước <= 1 VÀ nơi ra viện là “về nhà”: có VÀ số lần nhập viện nội trú năm trước <= 0 THÌ tỷ lệ nhãn <30 trong train=0.068; số encounter train ở lá=25,360; không gắn cờ.
+NẾU số lần nhập viện nội trú năm trước <= 1 VÀ nơi ra viện là “về nhà”: có VÀ số lần nhập viện nội trú năm trước >= 1 THÌ tỷ lệ nhãn <30 trong train=0.113; số encounter train ở lá=6,372; không gắn cờ.
+NẾU số lần nhập viện nội trú năm trước >= 2 VÀ số lần nhập viện nội trú năm trước <= 4 VÀ số lần nhập viện nội trú năm trước <= 2 THÌ tỷ lệ nhãn <30 trong train=0.176; số encounter train ở lá=4,380; GẮN CỜ.
+NẾU số lần nhập viện nội trú năm trước >= 2 VÀ số lần nhập viện nội trú năm trước <= 4 VÀ số lần nhập viện nội trú năm trước >= 3 THÌ tỷ lệ nhãn <30 trong train=0.228; số encounter train ở lá=2,945; GẮN CỜ.
+NẾU số lần nhập viện nội trú năm trước >= 2 VÀ số lần nhập viện nội trú năm trước >= 5 THÌ tỷ lệ nhãn <30 trong train=0.357; số encounter train ở lá=1,220; GẮN CỜ.

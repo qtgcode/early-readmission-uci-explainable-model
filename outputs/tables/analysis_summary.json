@@ -1,0 +1,112 @@
+{
+  "source": "UCI Machine Learning Repository, dataset 296; DOI 10.24432/C5230J",
+  "target_definition": "1 for UCI label <30; 0 for >30 or NO",
+  "analysis_unit": "eligible encounter; patient_nbr used only for grouped splitting",
+  "cohort": {
+    "raw_rows": 101766,
+    "raw_unique_patients": 71518,
+    "raw_patients_with_multiple_encounters": 16773,
+    "excluded_death_dispositions": 1652,
+    "excluded_hospice_dispositions": 771,
+    "excluded_pending_discharge_disposition_12": 3,
+    "excluded_invalid_or_missing_target": 0,
+    "eligible_encounters": 99340,
+    "eligible_unique_patients": 69988,
+    "eligible_patients_with_multiple_encounters": 16340,
+    "positive_encounters": 11312,
+    "positive_rate": 0.11387155224481578,
+    "feature_count_before_encoding": 43,
+    "excluded_columns": [
+      "encounter_id",
+      "gender",
+      "patient_nbr",
+      "payer_code",
+      "race",
+      "readmitted",
+      "weight"
+    ]
+  },
+  "splits": {
+    "train": {
+      "encounters": 59602,
+      "positive_encounters": 6787,
+      "positive_rate": 0.11387201771752625,
+      "unique_patients": 41917
+    },
+    "validation": {
+      "encounters": 19870,
+      "positive_encounters": 2263,
+      "positive_rate": 0.11389028686462004,
+      "unique_patients": 14016
+    },
+    "test": {
+      "encounters": 19868,
+      "positive_encounters": 2262,
+      "positive_rate": 0.11385141936782767,
+      "unique_patients": 14055
+    }
+  },
+  "train_prevalence_for_baseline": 0.11387201771752625,
+  "primary_metric": "average precision (PR-AUC)",
+  "threshold_policy": "maximize F1 on validation separately for each fitted model; evaluate once on held-out test",
+  "privacy": "No raw records, patient identifiers, encounter identifiers, or row-level predictions exported.",
+  "reproducibility_seed": 42,
+  "metrics": [
+    {
+      "model": "prevalence_baseline",
+      "n": 19868,
+      "positive_rate": 0.11385141936782767,
+      "pr_auc_average_precision": 0.11385141936782767,
+      "roc_auc": 0.5,
+      "threshold": 0.5,
+      "precision": 0.0,
+      "recall_sensitivity": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0,
+      "brier_score": 0.10088927410005072,
+      "tn": 17606,
+      "fp": 0,
+      "fn": 2262,
+      "tp": 0,
+      "validation_threshold_selection": "fixed 0.5; prevalence-only baseline"
+    },
+    {
+      "n": 19868,
+      "positive_rate": 0.11385141936782767,
+      "pr_auc_average_precision": 0.22956494222541854,
+      "roc_auc": 0.6662039395981978,
+      "threshold": 0.12402949879766309,
+      "precision": 0.19740400216333154,
+      "recall_sensitivity": 0.48408488063660476,
+      "specificity": 0.747131659661479,
+      "f1": 0.28044563964656166,
+      "brier_score": 0.09611234121355686,
+      "tn": 13154,
+      "fp": 4452,
+      "fn": 1167,
+      "tp": 1095,
+      "model": "logistic_regression",
+      "validation_f1_at_selected_threshold": 0.2715281234444997,
+      "validation_threshold_selection": "threshold maximizing validation F1"
+    },
+    {
+      "n": 19868,
+      "positive_rate": 0.11385141936782767,
+      "pr_auc_average_precision": 0.18951684009886957,
+      "roc_auc": 0.6446077707613743,
+      "threshold": 0.14020412861637632,
+      "precision": 0.17351343823979948,
+      "recall_sensitivity": 0.5508399646330681,
+      "specificity": 0.6628990117005567,
+      "f1": 0.26389918458117123,
+      "brier_score": 0.09707024256480186,
+      "tn": 11671,
+      "fp": 5935,
+      "fn": 1016,
+      "tp": 1246,
+      "model": "shallow_decision_tree",
+      "validation_f1_at_selected_threshold": 0.2618174195576983,
+      "validation_threshold_selection": "threshold maximizing validation F1"
+    }
+  ]
+}
